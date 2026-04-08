@@ -41,7 +41,7 @@ class DemuraSimulator:
                 try:
                     # Re-import each time to pick up config changes
                     import importlib
-                    import demura_functions as df
+                    import app.demura_functions as df
                     importlib.reload(df)
 
                     processor = df.Meta_Demura(config)

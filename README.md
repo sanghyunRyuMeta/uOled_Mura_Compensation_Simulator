@@ -42,14 +42,14 @@ View and edit `config.json` directly within the application. Supports save and r
 ```
 uOled_Mura_Compensation_Simulator/
 ├── main.py                    # Application entry point
-├── demura_main.py             # CLI entry point (headless pipeline run)
-├── demura_functions.py        # Meta_Demura class — core pipeline logic (DeMLA, Meta DLL, NVT DLL)
 ├── config.json                # Runtime configuration (panel, mode, DLL paths, output dirs)
 ├── app/
 │   ├── __init__.py
 │   ├── gui.py                 # Main window (DemuraGUI) — tab layout, header, shared console
 │   ├── config.py              # Path constants, config load/save, panel/INI/DLL discovery
 │   ├── simulator.py           # DemuraSimulator — background thread wrapper with stdout capture
+│   ├── demura_functions.py    # Meta_Demura class — core pipeline logic (DeMLA, Meta DLL, NVT DLL)
+│   ├── demura_main.py         # CLI entry point (headless pipeline run)
 │   ├── theme.py               # Color palette, fonts, spacing (Clay Light Mode Theme)
 │   ├── widgets.py             # Reusable styled widgets (SectionCard, AccentButton, FormField, etc.)
 │   ├── assets/                # Logo and icon files
@@ -110,7 +110,7 @@ python main.py
 ### Run Headless (CLI)
 
 ```bash
-python demura_main.py
+python -m app.demura_main
 ```
 
 ### Workflow

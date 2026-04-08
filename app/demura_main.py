@@ -1,8 +1,13 @@
 import json
-from demura_functions import Meta_Demura
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from app.demura_functions import Meta_Demura
 
 def main():
-   
+
     with open('config.json', 'r') as f:
         config = json.load(f)
 
