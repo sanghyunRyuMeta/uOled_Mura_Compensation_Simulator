@@ -1,0 +1,12 @@
+{
+  "panel": "BE2-1",
+  "mode": "WHITE",
+  "Meta_dll_path": "./files/Meta_DMR.dll",
+  "NVTDLLPath": "./files/NVTDemuraEncoderDLL.dll",
+  "deMLA": "./files/demura_prepro.dll",
+  "ini_file": "./files/RGBMode.ini",
+  "source_dir": "./",
+  "data_dir": "./data",
+  "output_dir": "./data\\BE2-1\\WhiteMode\\SW_out",
+  "output_dir_2": "./data\\BE2-1\\WhiteMode\\HW_out"
+}

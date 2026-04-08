@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Data files (large binary/CSV)
+data/*/WhiteMode/
+data/*/RGBMode/
+data/*/*.csv
+data/*/*.png
+data/*/*.tif
+data/*/*.tiff
+
+# Output directories
+**/SW_out/
+**/HW_out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temp
+files/tmp/
